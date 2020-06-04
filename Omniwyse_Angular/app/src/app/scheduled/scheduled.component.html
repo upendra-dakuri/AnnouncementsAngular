@@ -1,0 +1,17 @@
+
+  <h2></h2>
+          <ul *ngFor="let post of postList"  class="text1">
+            <div><img [innerHTML] [src]="post.image">
+            </div>
+                 <h1>{{post.title}}</h1>
+                  <b>{{post.date}}</b>
+            <div>
+              <br>
+                  <div [innerHTML]="post.subject"></div><br>
+            </div>
+            <a routerLink ="#" (click)="deleteAnnouncement(post._id)">Delete</a>
+            &nbsp;&nbsp;
+            <a routerLink ="#" (click) ="goToUpdate(post._id)" >Edit</a>
+          
+          </ul>
+    

@@ -1,0 +1,26 @@
+<div color="primary" class="navbar">
+    <div>Omniwyse</div>
+    <div class="ankor">
+       <span>Hi,{{name}}</span>
+      <span><a href="/about">About</a></span>
+      <span style="float:right"><a href="" (click)="logout()">log out</a></span>
+    </div>
+</div>
+  <br>
+<h1>{{message}}</h1>
+
+        <ul *ngFor="let post of postList" class="text1">
+          <div><img [innerHTML] [src]="post.image">
+          </div>
+               <h1>{{post.title}}</h1>
+                <b>post.date</b>
+          <div>
+               <br>
+                <div [innerHTML]="post.subject"></div><br>
+          </div>
+          
+            <button (click)="goToNotification(post._id)" mat-button color="primary">View Notification</button>
+         
+        </ul>
+  
+     

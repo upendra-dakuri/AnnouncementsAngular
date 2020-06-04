@@ -1,0 +1,74 @@
+<h1>{{title}}</h1>
+<br>
+<body>
+
+  <form [formGroup] ="notificationForm">
+    <div class="Divtags">
+      <h1>Add Tags</h1>
+      <select  formControlName="tags" id="tags">
+     <option value="" disabled>Select the tag</option> 
+     <option value="interns">Interns</option>
+     <option value= "employees">Employees</option>
+     <option value="techLead">Tech Lead</option>
+     </select>
+     <br>
+     <br>
+     <br>
+      <h2> Selected:</h2>
+     <div class="listTags">
+ <p *ngFor="let tag of tagList">{{tag}}</p><br><br>
+     </div>
+     <div class="tagBtn">
+      <input type="button" value="Cancel" id="tagBtn2" (click)="cancel()">
+     <input type  ="button" value = "Add tag" (click)="addToTags()" style="color:white;background-color:#0F9D58;" id="tagBtn3">
+    </div>
+   </div>
+    <div class="container">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Title</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" placeholder="Title" formControlName="title">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Subject</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" placeholder="Subject" formControlName="subject">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Description</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" placeholder="Describe Here.." style="height:200px" formControlName="description"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="urlname">Link</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="url" placeholder="Enter the url" formControlName="link">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Image</label>
+    </div>
+    <div class="col-75">
+      <input type="file" id="inp" (change)="onFileSelected($event)">
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Announce Now" (click)="postAnnouncement()">
+    <input type="datetime-local" formControlName="scheduledTime" id="schedule">
+    <input type="button" value="Schedule" (click)="postAnnouncement(); announcementSchedule()" id="schbtn">
+    </div>
+  </div>
+  </form>
+</body>

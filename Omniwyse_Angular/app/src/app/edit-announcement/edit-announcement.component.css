@@ -1,0 +1,175 @@
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color:#0F9D58;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top:17px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  
+  }
+  
+  input[type=submit]:hover {
+    background-color: #0F9D58;
+  }
+
+  
+  .container {
+    width: 500px;
+    padding: 70px;
+    border: 2px solid #4CAF50;
+    margin-left:100px;
+    margin-top:-600px;
+    justify-content:center;
+    position: absolute;
+
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display:table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width:50%;
+      margin-top: 0;
+    }
+  }
+  
+  .mat-card-header.mat-card-title{
+      justify-content: center;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  #tags{
+
+    float: left;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  mat-form-field {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;   
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  #schedule{
+    margin-left: -20px;
+    padding-left: 20px;
+   
+
+  }
+
+  #schbtn{
+    margin-top: 19px;
+    background-color:#F4B400;
+    color: white;
+    padding: 12px 15px;
+    margin-left:20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+
+  .Divtags{
+    margin-left:780px;
+    width:40%;
+    height:580px;
+    border: 2px solid #4CAF50;
+    justify-content: center;
+    margin-top:10px;
+
+
+  }
+
+  .listTags{
+    border: 1px solid #ccc; 
+    margin-left: 50px;
+    width:80%;
+    height:330px;
+    font-size: 18px;
+  }
+
+  .tagBtn{
+    margin-left: 320px;
+    margin-top: 19px;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  #tagBtn2{
+    margin-top: 5px;
+    margin-right: 20px;
+    background-color:#DB4437;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #tagBtn3{
+    margin-top: 5px;
+    margin-right:5px;
+    background-color:#4CAF50;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  h2{
+    margin-left: 50px;
+  }
+   
+   
+
+
+ 
+   
+  
+ 
